@@ -24,18 +24,19 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
     + [Tutorials](#tutorials)
     + [Community Discussions](#community-discussions)
   * [Tools and Frameworks](#tools-and-frameworks)
-     + [Language Agnostic](#language-agnostic)
-     + [C (as a Backend)](#c-as-a-backend)
-     + [CLR](#clr)
-     + [D](#d)
-     + [Graal](#graal)
-     + [Haskell](#haskell)
-     + [JavaScript](#javascript)
-     + [JVM](#jvm)
-     + [Kotlin](#kotlin)
-     + [Python](#python)
-       * [Lists of Python Parsing Tools](#lists-of-python-parsing-tools)
-     + [Rust](#rust)
+    + [Language Agnostic](#language-agnostic)
+    + [C / C++](#c--c)
+    + [CLR](#clr)
+    + [D](#d)
+    + [Go](#go)
+    + [Graal](#graal)
+    + [Haskell](#haskell)
+    + [JavaScript](#javascript)
+    + [JVM](#jvm)
+    + [Kotlin](#kotlin)
+    + [Python](#python)
+      * [Lists of Python Parsing Tools](#lists-of-python-parsing-tools)
+    + [Rust](#rust)
   * [Compilers and Interpreters](#compilers-and-interpreters)
     + [Serious Projects](#serious-projects)
     + [Educational and Toy Projects](#educational-and-toy-projects)
@@ -56,20 +57,22 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
   * [Computer Systems: A Programmer’s Perspective, R. Bryant, D. O'Hallaron](https://www.amazon.com/dp/9332573905) - Comprehensive treatement of Computer Systems including Compilers, Interpreters and Runtimes.
   * [Elements of Computing Systems, N. Nisan, S. Schocken](https://www.amazon.com/dp/0262640686) - How to build a computer starting with Nand Logic Gates and then move to Machine Code, Assemblers, Compilers and Operating Systems.
   * [SICP, H. Abelson, G. Sussman](https://mitpress.mit.edu/sicp/full-text/book/book.html) - Structure and Interpretation of Computer Programs.
+    + Other editions: [HTML5/EPUB version](https://sarabander.github.io/sicp/).
 
 #### Introductory
 
-  * [Basics of Compiler Design, T. Mogensen](http://www.diku.dk/hjemmesider/ansatte/torbenm/Basics/).
-  * [Beautiful Racket - How to Make Your Own PL with Racket, M. But­t­er­ick](http://beautifulracket.com).
-  * [Compilers: Principles, Techniques, and Tools](https://www.amazon.com/dp/0321486811) - The Dragons Book (2nd Edition).
-  * [Crafting Interpreters: A Handbook for Making Programming Languages, B. Nystrom](http://www.craftinginterpreters.com/).
+  * [Basics of Compiler Design, T. Mogensen](http://www.diku.dk/hjemmesider/ansatte/torbenm/Basics/) - Short and concise book on the basic concepts behind Compiler Design.
+  * [Beautiful Racket, M. But­t­er­ick](http://beautifulracket.com) - How to make your own Programming Language with Racket.
+  * [Build Your Own Lisp, D. Holden](http://www.buildyourownlisp.com) - Learn C and build your own Lisp programming language in 1000 lines of code.
+  * [Compilers: Principles, Techniques, and Tools, A. Aho, M. Lam, R. Sethi, J. Ullman](https://www.amazon.com/dp/0321486811) - The infamous Dragons Book, a classic textbook on Compiler Construction.
+  * [Crafting Interpreters, B. Nystrom](http://www.craftinginterpreters.com/) - Everything you need to learn to build an interpreted, full-featured, efficient scripting language.
     + [GitHub Repo](https://github.com/munificent/craftinginterpreters).
     + Discussions: [HN](https://news.ycombinator.com/item?id=13406081).
-  * [Create Your Own Programming Language](http://createyourproglang.com/).
+  * [Create Your Own Programming Language](http://createyourproglang.com/) - Very short book on building your own programming language with video tutorials and source code projects for 3 example programming languages.
     + Discussions: [HN](https://news.ycombinator.com/item?id=813133).
-  * [Engineering a Compiler, K. Cooper, L. Torczon](https://www.amazon.com/dp/012088478X).
-  * [Essentials of Programming Languages, D. Friedman & M. Wand](https://www.amazon.com/dp/0262062798).
-  * [Language Implementation Patterns, T. Parr](https://www.amazon.com/dp/193435645X).
+  * [Engineering a Compiler, K. Cooper, L. Torczon](https://www.amazon.com/dp/012088478X) - Modern comprehensive textbook on Compilers Construction. It covers SSA Form and recent research on Machine Code Generation.
+  * [Essentials of Programming Languages, D. Friedman & M. Wand](https://www.amazon.com/dp/0262062798) - Fundamental concepts of programming languages with a focus on Semantics, Interpretation and CPS (Continuation Passing Style).
+  * [Language Implementation Patterns, T. Parr](https://www.amazon.com/dp/193435645X) - Learn the patterns behind building programming languages and build an interpreter yourself, using ANTLR.
   * [Modern Compiler Implementation in ML, A. Appel](https://www.cs.princeton.edu/~appel/modern/ml/).
     + Other editions: [MCI in C](https://www.cs.princeton.edu/~appel/modern/c/), [MCI in Java](https://www.cs.princeton.edu/~appel/modern/java/).
   * [Programming Language Pragmatics, M. Scott](https://www.amazon.com/dp/0123745144).
@@ -81,6 +84,10 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
   * [The BEAM Book](https://github.com/happi/theBeamBook) - Description of the ERTS (Erlang Runtime System) and the BEAM Virtual Machine.
   * [Virtual Machines, Smith and Nait](https://www.amazon.com/dp/1558609105).
   * [Virtual Machines, Iain Craig](https://www.amazon.com/dp/1852339691).
+  * [Writing an Interpreter in Go, T. Ball](https://interpreterbook.com/).
+  * [Writing Compilers and Interpreters: A Software Engineering Approach](https://www.amazon.com/dp/0470177071).
+    + Other editions: [Writing Compilers and Interpreters: An Applied Approach Using C++](https://www.amazon.com/dp/0471113530), [Writing Compilers and Interpreters: An Applied Approach Using C](https://www.amazon.com/dp/0471555800).
+
 
 #### Advanced
 
@@ -106,8 +113,12 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
   * [A Brief History of JIT Compilation, J. Aycock](http://eecs.ucf.edu/~dcm/Teaching/COT4810-Spring2011/Literature/JustInTimeCompilation.pdf).
   * [A Flexible Prolog Interpreter in Python, C. Bolz & M. Leuschel](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.103.1886&rep=rep1&type=pdf).
   * [A Graph Higher-Order IR, R. Leißa, M. Koster & S. Hack](http://compilers.cs.uni-saarland.de/papers/lkh15_cgo.pdf).
+  * [A Micro-Manual for LISP - Not the Whole Truth, J. McCarthy](https://www.uraimo.com/files/MicroManual-LISP.pdf).
+    + Other editions: [Neat and nice typeset](https://github.com/jaseemabid/micromanual).
   * [A Prolog Interpreter in Python, C. Bolz](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.121.8625&rep=rep1&type=pdf).
   * [A Simple Multi-Processor Computer Based on Subleq, O. Mazonka, A. Kolodin](https://arxiv.org/abs/1106.2593).
+  * [An Evil Copy: How the Loader Betrays You](http://www.cse.psu.edu/~trj1/papers/ndss17.pdf) - About security issues related to Dynamic Loading.
+  * [An Incremental Approach to Compiler Construction](http://scheme2006.cs.uchicago.edu/11-ghuloum.pdf).
   * [Compiler Construction Using Scheme, E. Hilsdale, J. Ashley, R. Dybvig & D. Friedman](https://www.cs.indiana.edu/~dyb/pubs/fple95.pdf).
   * [Compiling with Continuations: Continued, A. Kennedy](https://www.microsoft.com/en-us/research/wp-content/uploads/2007/10/compilingwithcontinuationscontinued.pdf).
   * [Definitional Interpreters for Higher-Order Programming Languages, J. Reynolds](http://www.cs.uml.edu/~giam/91.531/Textbooks/definterp.pdf).
@@ -136,6 +147,7 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
 
   * [C. Bolz’s Research Publications](https://scholar.google.com/citations?user=S0rpYpkAAAAJ).
   * [Compilers Lab at Saarland University](http://compilers.cs.uni-saarland.de).
+  * [Kenichi Asai](http://pllab.is.ocha.ac.jp/%7Easai/papers/).
   * [Packrat Parsing (PEG) Papers and Resources](http://bford.info/packrat/).
 
 ### Specifications
@@ -180,15 +192,18 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
   * [Anders Hejlsberg on Modern Compiler Construction](https://channel9.msdn.com/Blogs/Seth-Juarez/Anders-Hejlsberg-on-Modern-Compiler-Construction).
   * [An Introduction to Combinator Compilers and Graph Reduction Machines](https://www.youtube.com/watch?v=GawiQQCn3bk).
   * [Building an Interpreter in RPython](https://www.youtube.com/watch?v=9tDpjzPLvNY).
+  * [CPython - A Ten-Hour Codewalk](http://pgbovine.net/cpython-internals.htm).
   * [Exploring Python’s Bytecode](https://ep2016.europython.eu/media/conference/slides/exploring-python-bytecode.pdf).
   * [Java AOT (Ahead of Time) Compilation](https://2016.javazone.no/program/java-aot-compilation).
   * [MetaScala: A Tiny DIY JVM](https://skillsmatter.com/skillscasts/4916-metascala-a-tiny-diy-jvm) - Metascala is a tiny metacircular Java Virtual Machine (JVM) written in the Scala programming language.
   * [Meta-Tracing, RPython and PyPy](https://ia601503.us.archive.org/32/items/vmss16/bolz.pdf).
   * [One VM to Rule Them All, One VM to Bind Them](https://www.youtube.com/watch?v=FJY96_6Y3a4) - Tutorial on the Truffel technology.
+  * [Programming Should Eat Itself](https://www.youtube.com/watch?v=SrKj4hYic5A) - StrangeLoop Talk on Reflective Programming and Kenichi Asai's Black Programming Language.
   * [Python, Linkers and Virtual Memory - PYCON US](https://www.youtube.com/watch?v=twQKAoq2OPE).
   * [Reverse Engineering the MOS 6502 CPU](https://youtube.com/watch?v=fWqBmmPQP40).
   * [Single Static Assignment Form Seminar](http://compilers.cs.uni-saarland.de/ssasem/) - Introductory seminar on SSA Form, Compiler Optimizations under it and its applications in other areas such as Program Analysis and Verification.
   * [The JVM (Java Virtual Machine) Architecture](https://www.youtube.com/watch?v=ZBJ0u9MaKtM).
+  * [The Most Beautiful Program Ever Written](https://www.youtube.com/watch?v=OyfBQmvr2Hc) - William Byrd on a Lisp interpreter written in 15 lines of Lisp.
   * [The MoVfuscator: turning mov into a soul crushing RE nightmare](https://www.youtube.com/watch?v=R7EEoWg6Ekk).
     + Discussions: [HN](https://news.ycombinator.com/item?id=9751312), [Reddit](https://redd.it/4zl8mh).
   * The SSA Form - Video Lectures from NPTEL's Compilers Course (see: [Courses](#courses) for more info):
@@ -225,20 +240,27 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
 ### Tutorials
 
   * [A Tutorial Implementation of a Dependently Typed Lambda Calculus](https://www.andres-loeh.de/LambdaPi/).
+  * [A Beginner's Guide to Linkers](http://www.lurklurk.org/linkers/linkers.html) - Tutorial for helping C & C++ programmers understand the essentials of what the linker does.
   * [Algorithm W Step By Step](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.65.7733&rep=rep1&type=pdf).
   * [Compiler Optmization Tutorial](https://www.youtube.com/watch?v=SfV8aRX0YY0).
+  * [Hindley-Damas-Milner Tutorial](https://github.com/quchen/articles/tree/master/hindley-milner) - Extensively documented walkthrough for typechecking a basic functional language using the Hindley-Damas-Milner algorithm.
   * [How I Wrote a Programming Language, and How You Can Too](https://medium.com/@william01110111/the-programming-language-pipeline-91d3f449c919).
     + Discussions: [Reddit](https://redd.it/62ixbc).
   * [Implementing a JIT Compiled Language with Haskell and LLVM](http://www.stephendiehl.com/llvm/).
   * [Kaleidoscope: Implementing a Language with LLVM in Objective Caml](http://llvm.org/docs/tutorial/index.html#kaleidoscope-implementing-a-language-with-llvm-in-objective-caml).
   * [Let’s Build A Simple Interpreter](https://ruslanspivak.com/lsbasi-part1/).
   * [Lisperator](http://lisperator.net/pltut/) - How to implement a programming language in JavaScript.
+  * [Little Lisp Interpreter](https://maryrosecook.com/blog/post/little-lisp-interpreter) - Interpreter that supports function invocation, lambdas, lets, ifs, numbers, strings, a few library functions, and lists in under 120 lines of JavaScript.
+    + [GitHub Repository](https://github.com/maryrosecook/littlelisp).
+  * [`lis.py`, v1: (How to Write a (Lisp) Interpreter (in Python))](http://norvig.com/lispy.html) - Tutorial by Peter Norvig on writing a simple Lisp interpreter.
+  * [`lis.py`, v2: An ((Even Better) Lisp) Interpreter (in Python)](http://norvig.com/lispy2.html) - Follow-up tutorial by Peter Norvig on making `lis.py` slightly better.
   * [LLVM Tutorial: Implementing Kaleidoscope](http://releases.llvm.org/3.6.2/docs/tutorial/LangImpl1.html).
     + [Python version with LLVMPY](http://www.llvmpy.org/llvmpy-doc/dev/doc/kaleidoscope/index.html).
   * [Metacompiler Tutorial, Part 1](http://www.bayfronttechnologies.com/mc_tutorial.html).
   * [Project: A Programming Language](http://eloquentjavascript.net/11_language.html) - Chapter 11 from the book _Eloquent JavaScript_, 2nd Edition.
   * [Write You a Haskell](http://dev.stephendiehl.com/fun/).
   * [Writing a Language in Truffel](http://cesquivias.github.io/tags/truffle.html) - Interpreter development tutorial using Truffel, by Cristian Esquivias.
+
 
 ### Community Discussions
 
@@ -261,6 +283,8 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
 ### Language Agnostic
 
   * [B3: The Bare Bones Backend](https://webkit.org/docs/b3/) - WebKit's optimizing JIT Compiler for procedures containing C-like code.
+  * [Capstone](https://github.com/aquynh/capstone) - Lightweight multi-platform, multi-architecture disassembly framework with bindings to various famous programming languages.
+  * [Keystone](https://github.com/keystone-engine/keystone) - Lightweight multi-platform, multi-architecture assembler framework with bindings to various famous programming languages.
   * [LLILCL](https://github.com/dotnet/llilc) - LLVM-based Compiler Backend for .NET Core.
   * [LLVM](http://llvm.org/) - The LLVM Compiler-Backend Framework.
   * [MicroVM](http://microvm.github.io/) - The "Mu" Framewrok for Programming Languages development based on the MuVM Specification.
@@ -269,15 +293,16 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
   * [Rubinius](https://github.com/rubinius/rubinius) - Programming Languages Development Platform.
   * [Summus](https://github.com/igor84/summus) - Basic, reusable, compiler-frontend implementation using LLVM as a backend.
 
-### C (as a Backend)
+### C / C++
 
-  * [GCC](https://gcc.gnu.org/) - The GNU Compiler Collection.
-  * [LCC](https://github.com/drh/lcc) - The lcc retargetable ANSI C compiler.
+  * [AsmJIT](https://github.com/asmjit/asmjit) - Complete x86/x64 JIT and Remote Assembler for C++.
+  * [GCC](https://gcc.gnu.org/) - The GNU Compiler Collection (C as a Backend).
+  * [LCC](https://github.com/drh/lcc) - The lcc retargetable ANSI C compiler (C as a Backend).
   * [libFirm](http://pp.ipd.kit.edu/firm/) - C-library that provides a graph-based intermediate representation, optimizations, and assembly code generation suitable for use in compilers.
   * [libJIT](https://www.gnu.org/software/libjit/) - Library for generic Just-In-Time compiler functionality independent of any particular bytecode, language, or runtime.
   * [myJIT](http://myjit.sourceforge.net/) - Library for machine-code generation and execution at run-time.
-  * [PCC](http://pcc.ludd.ltu.se/) - The Portable C Compiler.
-  * [TCC](http://bellard.org/tcc/) - The Tiny C Compiler.
+  * [PCC](http://pcc.ludd.ltu.se/) - The Portable C Compiler (C as a Backend).
+  * [TCC](http://bellard.org/tcc/) - The Tiny C Compiler (C as a Backend).
 
 ### CLR
 
@@ -293,6 +318,11 @@ A curated list of awesome resources, learning materials, tools, frameworks, plat
   * [libdparse](https://github.com/dlang-community/libdparse) - Library allowing to build lexers and parsers. Contains a lexer and a parser for the D language itself.
   * [llvm-d](https://github.com/Calrama/llvm-d) - D bindings for LLVM.
   * [Pegged](https://github.com/PhilippeSigaud/Pegged) - design, test and generate parsers for PEG grammars.
+
+### Go
+
+  * [goyacc](https://godoc.org/golang.org/x/tools/cmd/goyacc) - YACC Implementation in Go. Standard LALR(1) parser generator.
+  * [LLVM Go binding](https://godoc.org/llvm.org/llvm/bindings/go/llvm) - Official Go LLVM binding.
 
 ### Graal
 
@@ -362,29 +392,43 @@ _This section aims at listing code projects of Compilers, Interpreters, Translat
 ### Serious Projects
 
   * [Babel.js](https://github.com/babel/babel) - Next-generation JavaScript Compiler.
-  * [Chez Scheme's Compiler](https://github.com/cisco/ChezScheme) - ChezScheme Language Compiler.
+  * [ChezScheme's Compiler](https://github.com/cisco/ChezScheme) - ChezScheme Language Compiler.
+  * [Eta' Compiler](https://github.com/typelead/eta) - JVM-based Compiler for the Eta Programming Language.
+  * [Frege's Compiler](https://github.com/Frege/frege) - JVM-based Compiler for the Frege Programming Language.
   * [Gluon's Compiler](https://github.com/gluon-lang/gluon) - Embedded Language Compiler written in Rust.
+  * [HHVM](https://github.com/facebook/hhvm) - Virtual Machine for running programs written in Hack and PHP.
   * [Lily's Interpreter](https://github.com/FascinatedBox/lily).
   * [Lua's Interpreter](https://github.com/LuaDist/lua) - Official Lua Language Interperter.
     + [Lua's Annotated Source Code](http://stevedonovan.github.io/lua-5.1.4/) - Annotated source code of the Lua Programming Language Interpreter v5.1.4.
-  * [Mirah's Compiler](https://github.com/mirah/mirah) - JVM-based Compiler for Mirah Language.
+  * [Mirah's Compiler](https://github.com/mirah/mirah) - JVM-based Compiler for the Mirah Programming Language.
   * [Nim's Compiler](https://github.com/nim-lang/Nim).
+  * [P Lang](https://github.com/p-org/P) - The P Programming Language Runtime.
   * [Red's Compiler](https://github.com/red/red).
   * [Roslyn](https://github.com/dotnet/roslyn) - The .NET "Roslyn" Compiler Platform.
   * [TypeScript's Compiler](https://github.com/Microsoft/TypeScript).
   * [Wren's Compiler](https://github.com/munificent/wren).
+  * [Zig's Compiler](https://github.com/zig-lang/zig) - Zig Language Compiler.
 
 ### Educational and Toy Projects
 
+  * [Black](http://www.is.ocha.ac.jp/~asai/Black/) - Scheme interpreter for the Reflective Programming Language "Black", by Kenichi Asai's.
+    + Other sources: [GitHub Mirror](https://github.com/readevalprintlove/black).
   * [C4](https://github.com/rswier/c4) - C Lang in 4 Functions.
     + Discussions: [HN](https://news.ycombinator.com/item?id=8558822).
   * [CarpVM](https://github.com/tekknolagi/carp) - Experimental VM implementation in C.
+  * [Charly](https://github.com/charly-lang/charly) - Interpreter for a dynamically typed language written in Crystal.
   * [Dale](https://github.com/tomhrr/dale) - Lisp-flavoured C: a system programming language.
+  * [Eschelle](https://github.com/Eschelle/Eschelle) - Open source cross platform multi-paradigm language with VM & JIT
   * [Gecho](https://github.com/tekknolagi/gecho) - Simple-stack language implementation in C.
+  * [gocaml](https://github.com/rhysd/gocaml) - Minimal functional programming language implementation in Go and LLVM.
   * [Hython](https://github.com/mattgreen/hython) - Haskell-powered Python 3 interpreter.
     + Discussions: [Reddit](https://redd.it/46f8j4).
+  * [llgo](https://github.com/llvm-mirror/llgo) - Go frontend for LLVM written in Go.
+  * [Mal's Interpreter](https://github.com/kanaka/mal) - Clojure-inspired Lisp interpreter implemented in 64 languages.
   * [MetaScala](https://github.com/lihaoyi/Metascala) - Metacircular JVM implementation in Scala.
   * [mini-js](https://github.com/maierfelix/mini-js) - Experimental self-hosted JavaScript compiler in 1K LoC.
+  * [MunVM](https://github.com/MunVM/MunVM) - Lua VM & Compiler in C.
+  * [MY-BASIC](https://github.com/paladin-t/my_basic) - An embeddable BASIC dialect interpreter in C with modern paradigms.
   * [Poprc](https://github.com/HackerFoo/poprc) - Compiler for the Popr Language.
   * [PyCOOLC](https://github.com/aalhour/PyCOOLC) - Compiler for the COOL Programming Language written in Python 3.
   * [RabbitVM](https://github.com/rabbitvm/rabbit) - RISC-based VM implementation in C.
@@ -392,6 +436,7 @@ _This section aims at listing code projects of Compilers, Interpreters, Translat
   * [The Super Tiny Compiler](https://github.com/thejameskyle/the-super-tiny-compiler) - Tiny educational compiler project in JavaScript.
     + Discussions: [HN](https://news.ycombinator.com/item?id=11395656).
   * [tinyc.c](http://www.iro.umontreal.ca/~felipe/IFT2030-Automne2002/Complements/tinyc.c) - Tiny-C language compiler in C.
+  * [tisp](https://github.com/raviqqe/tisp) - "Time is Space" Programming Language Interpreter.
 
 
 ## Runtimes and VMs
@@ -427,9 +472,11 @@ _This section aims at listing code projects of Compilers, Interpreters, Translat
 
 ## Verticals
 
+  * [68 Resources for Creating Programming Languages](https://tomassetti.me/resources-create-programming-languages/).
   * [Awesome Static Analysis](https://github.com/mre/awesome-static-analysis).
   * [Compiler Conferences, Workshops and Journals](https://github.com/MattPD/cpplinks/blob/master/compilers.md#conferences).
   * [Languages and Compilers Network Graph](https://mohd-akram.github.io/languages/).
+  * [miniKanren.org](http://minikanren.org) - Papers, Talks and Implementations of miniKanren and microKanren.
   * [PLT Enlightenment](http://steshaw.org/plt/).
   * [Resources for Amateur Compiler Writers](https://c9x.me/compile/bib/).
   * [SSA Form Bibliography](http://www.dcs.gla.ac.uk/~jsinger/ssa.html).
